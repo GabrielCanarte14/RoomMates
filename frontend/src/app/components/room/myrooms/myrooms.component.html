@@ -1,0 +1,20 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let room of rooms">
+      <div class="card mb-4">
+        <img src="assets\rooms\{{ room.id }}.jpg" class="card-img-top" alt="Imagen room">
+        <div class="card-body">
+          <p class="card-title"><strong>{{ room.title }}</strong></p>
+          <p class="card-text">Direccion: {{ room.address }}</p>
+          <p class="card-text">Ciudad: {{ room.city }}</p>
+          <div class="hab">
+            <p class="card-text">Habitaciones: {{ room.roomsAvailable }}</p>
+            <p class="card-text">Precio: ${{ room.price }}</p>
+          </div>
+          <a href="#" class="btn btn-primary">Editar</a>
+          <a href="#" class="btn btn-primary">Eliminar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

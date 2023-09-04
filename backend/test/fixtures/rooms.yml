@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  owner: MyString
+  address: MyString
+  description: MyString
+  dateAvailable: MyString
+  roomsAvailable: 1
+
+two:
+  owner: MyString
+  address: MyString
+  description: MyString
+  dateAvailable: MyString
+  roomsAvailable: 1
