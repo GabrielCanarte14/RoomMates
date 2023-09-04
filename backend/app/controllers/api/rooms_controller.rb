@@ -43,7 +43,7 @@ class Api::RoomsController < ApplicationController
         price: room_params[:price],
         city: room_params[:city]
       )
-      render json: "Room updated"
+      render json: room
     else 
       render json:{ error: "Room not found"}
     end

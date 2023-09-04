@@ -9,3 +9,15 @@
 .nav-item {
     margin-left: 10px;
 }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.disable {
+    opacity: 0.5;
+    background-color: #f2f2f2;
+    color: #888;
+    pointer-events: none;
+}

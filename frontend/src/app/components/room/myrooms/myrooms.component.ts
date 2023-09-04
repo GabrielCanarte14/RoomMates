@@ -26,4 +26,10 @@ export class MyroomsComponent {
       }
     )
   }
+
+  deleteRoom(id:any){
+    this.roomService.deleteRoom(id).subscribe(room => {
+      console.log("Room has been deleted");
+    })
+  }
 }

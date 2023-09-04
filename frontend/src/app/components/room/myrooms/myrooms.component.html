@@ -11,8 +11,8 @@
             <p class="card-text">Habitaciones: {{ room.roomsAvailable }}</p>
             <p class="card-text">Precio: ${{ room.price }}</p>
           </div>
-          <a href="#" class="btn btn-primary">Editar</a>
-          <a href="#" class="btn btn-primary">Eliminar</a>
+          <a class="btn btn-success" routerLink="/edit/room/{{  room.id  }}">Editar</a>
+          <a class="btn btn-danger" (click)="deleteRoom(room.id)">Eliminar</a>
         </div>
       </div>
     </div>
