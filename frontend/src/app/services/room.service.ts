@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -10,10 +10,16 @@ export class RoomService {
   constructor(private http: HttpClient) { }
 
   listRoom() {
-    return this.http.get(this.url + '/api/rooms/');
+    return this.http.get(this.url + '/api/rooms');
   }
 
-  addRoom() { }
+  httpOptions = {
+    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  };
+
+  addRoom(data: any) {
+    return this.http.post(this.url + '/api/rooms', data, this.httpOptions);
+  }
 
   findRoom() { }
 

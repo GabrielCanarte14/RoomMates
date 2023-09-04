@@ -1,1 +1,31 @@
-<p>createroom works!</p>
+<div class="form">
+    <form [formGroup]="roomForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" id="roomTitle" formControlName="title">
+        </div>
+        <div class="mb-3">
+            <label for="title" class="form-label">Owner</label>
+            <input type="text" class="form-control" id="roomTitle" formControlName="owner">
+        </div>
+        <div class="mb-3">
+            <label for="title" class="form-label">Address</label>
+            <input type="text" class="form-control" id="roomTitle" formControlName="address">
+        </div>
+        <div class="mb-3">
+            <label for="title" class="form-label">Rooms Available</label>
+            <input type="text" class="form-control" id="roomTitle" formControlName="roomsAvailable" pattern="[0-9]*">
+        </div>
+        <div class="mb-3">
+            <label for="title" class="form-label">Price</label>
+            <input type="text" class="form-control" id="roomTitle" formControlName="price" pattern="[0-9]*">
+        </div>
+        <div class="mb-3">
+            <label for="title" class="form-label">City</label>
+            <input type="text" class="form-control" id="roomTitle" formControlName="city">
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Create</button>
+        </div>
+    </form>
+</div>
